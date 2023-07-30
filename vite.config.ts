@@ -14,6 +14,7 @@ export default defineConfig((args) => {
     return {
         base: '/file-uploader/',
         server: {
+            host: '0.0.0.0',
             proxy: {
                 [`/${args.mode}`]: {
                     target: env.VITE_APP_BASE_URL,
